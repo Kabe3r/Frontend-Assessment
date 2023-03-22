@@ -3,22 +3,19 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import { Badge } from '@mui/material';
+import { AppHeader, LineBreak, TypoH4 } from '../styles/StyleHeader';
 
 
 const Header = () => {
 
       return (
-            <AppBar color='transparent' sx={{ padding: '10px'}} >
+            <AppBar color='transparent' sx={AppHeader} >
                   <Toolbar >
-                        <Typography component="div" sx={{ flexGrow: 1,
-                        fontFamily: 'IBM-Plex'
-                         }}>
-                              <Typography variant='h4' sx={{
-                                    fontWeight: 600,
-                                    fontSize: '30px',
-                                    fontFamily: 'IBM-Plex'
-                                    
-                              }}>Welcome</Typography>
+                        <Typography component="div" sx={{
+                              flexGrow: 1,
+                              fontFamily: 'IBM-Plex'
+                        }}>
+                              <Typography variant='h4' sx={TypoH4}>Welcome</Typography>
                               <Typography sx={{ fontSize: '16px' }} variant='p' color='#475467'>Your current sales auction and activity</Typography>
 
                         </Typography>
@@ -34,6 +31,7 @@ const Header = () => {
                               <NotificationsNoneIcon />
                         </Badge>
                   </Toolbar>
+                  <hr style={LineBreak} />
             </AppBar>
       )
 }
