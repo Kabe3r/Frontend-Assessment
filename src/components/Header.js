@@ -2,8 +2,8 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
-import { Badge } from '@mui/material';
-import { AppHeader, LineBreak, TypoH4 } from '../styles/StyleHeader';
+import { Badge, Divider } from '@mui/material';
+import { AppHeader, TypoH4, TypoPara } from '../styles/StyleHeader';
 
 
 const Header = () => {
@@ -16,10 +16,11 @@ const Header = () => {
                               fontFamily: 'IBM-Plex'
                         }}>
                               <Typography variant='h4' sx={TypoH4}>Welcome</Typography>
-                              <Typography sx={{ fontSize: '16px' }} variant='p' color='#475467'>Your current sales auction and activity</Typography>
+                              <Typography sx={TypoPara} variant='p' color='#475467'>Your current sales auction and activity</Typography>
 
                         </Typography>
                         <Badge sx={{
+                              marginTop: '-16px',
                               "& .MuiBadge-badge": {
                                     color: "#fff",
                                     backgroundColor: "#F04438"
@@ -31,7 +32,7 @@ const Header = () => {
                               <NotificationsNoneIcon />
                         </Badge>
                   </Toolbar>
-                  <hr style={LineBreak} />
+                  <Divider sx={{ marginTop: '15px' }} variant='middle' />
             </AppBar>
       )
 }

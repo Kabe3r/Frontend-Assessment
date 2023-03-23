@@ -1,3 +1,5 @@
+import { theme } from './BreakPoints';
+
 export const AppHeader = {
       padding: '10px 0',
       position: 'static',
@@ -7,12 +9,15 @@ export const AppHeader = {
 export const TypoH4 = {
       fontWeight: 600,
       fontSize: '30px',
-      fontFamily: 'IBM-Plex'
-
+      fontFamily: 'IBM-Plex',
+      [theme.breakpoints.down('md')]: {
+            fontSize: '25px'
+      }
 }
 
-export const LineBreak = { 
-      width: '98.9%', 
-      marginTop: '30px', 
-      border: '1px solid var(--clr-line)' 
+export const TypoPara = {
+      fontSize: '16px',
+      [theme.breakpoints.down('md')]: {
+            fontSize: '14px'
+      }
 }

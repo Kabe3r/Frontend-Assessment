@@ -1,17 +1,30 @@
+import { theme } from './BreakPoints';
+
 export const BoxBanner = {
       boxSizing: 'border-box',
-      width: '98.7%',
+      width: '100%',
       height: 330,
-      fontFamily: 'IBM-Plex',
-      margin: '30px 10px 0 10px',
+      marginTop: '30px',
       border: '1px solid var(--clr-line)',
       borderRadius: '8px',
       backgroundColor: 'transparent',
+      [theme.breakpoints.down('md')]: {
+            height: 520
+      }
+}
+
+export const ToolBanner = {
+      [theme.breakpoints.down('md')]: {
+            flexDirection: 'column',
+            rowGap: '50px',
+      }
 }
 
 export const TypoDiv = {
       flexGrow: 1,
-      fontFamily: 'IBM-Plex'
+      [theme.breakpoints.down('md')]: {
+            marginTop: '-40px'
+      }
 }
 
 export const TypoH4 = {
@@ -23,13 +36,20 @@ export const TypoH4 = {
 export const TypoSpan = {
       marginLeft: '10px',
       color: 'var(--clr-typo)',
-      fontSize: '14px'
+      fontSize: '14px',
+      fontFamily: 'IBM-Plex'
 }
 
 export const ImgBanner = {
       margin: '24px auto 0 auto',
       display: 'block',
       borderRadius: '8px'
+}
+
+export const ImgLogo = {
+      margin: '-50px 0 0 25px',
+      height: '144px',
+      width: '144px',
 }
 
 export const BtnLive = {
@@ -51,9 +71,11 @@ export const BtnFiber = {
 export const BtnInvite = {
       borderColor: 'var(--clr-border)',
       color: 'var(--clr-bid-card)',
-      fontFamily: 'IBM-Plex',
+      fontFamily: 'inherit',
       marginTop: '-32px',
       borderRadius: '10px',
       textTransform: 'capitalize',
       fontSize: '12px'
 }
+
+

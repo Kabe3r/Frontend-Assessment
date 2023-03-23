@@ -1,7 +1,6 @@
-import { Alert, Box, Button, CircularProgress, Grid, Toolbar, Typography } from "@mui/material";
-import { TypoDiv, TypoH4 } from "../styles/StyleBanner";
+import { Alert, Box, Button, CircularProgress, Divider, Grid, Toolbar, Typography } from "@mui/material";
+import { TypoH4 } from "../styles/StyleBanner";
 import { BoxFeatured, BtnAuction } from "../styles/StyleFeatured";
-import { LineBreak } from "../styles/StyleHeader";
 import { useGetDataQuery } from '../RTK Query/APISlice';
 import CardGrid from "./CardGrid";
 
@@ -19,15 +18,15 @@ const Featured = () => {
   }
 
   return (
-    <section>
+    <section style={{ margin: '20px' }}>
       <Box sx={BoxFeatured} >
         <Toolbar>
-          <Typography component='div' sx={TypoDiv}>
+          <Typography component='div' sx={{ flexGrow: 1 }}>
             <Typography variant="h4" sx={TypoH4}>Featured Items</Typography>
           </Typography>
           <Button variant='outlined' sx={BtnAuction}>View Auction</Button>
         </Toolbar>
-        <hr style={LineBreak} />
+        <Divider variant='middle' />
         <Grid container sx={{ justifyContent: 'center', gap: '30px' }}>
           {isLoading ? (
             <CircularProgress size={70} sx={{ marginTop: '100px' }} color="secondary" />
