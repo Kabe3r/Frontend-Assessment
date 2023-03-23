@@ -14,5 +14,5 @@ export const TypoH4 = {
 export const LineBreak = { 
       width: '98.9%', 
       marginTop: '30px', 
-      border: '1px solid #EAECF0' 
+      border: '1px solid var(--clr-line)' 
 }

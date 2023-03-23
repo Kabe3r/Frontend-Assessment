@@ -4,14 +4,14 @@ export const BoxFeatured = {
       height: 1000,
       fontFamily: 'IBM-Plex',
       margin: '30px 10px 0 10px',
-      border: '1px solid #EAECF0',
+      border: '1px solid var(--clr-line)',
       borderRadius: '8px',
       backgroundColor: 'transparent',
 }
 
 export const BtnAuction = {
-      borderColor: '#D0D5DD',
-      color: '#344054',
+      borderColor: 'var(--clr-line)',
+      color: 'var(--clr-bid-card)',
       fontFamily: 'IBM-Plex',
       borderRadius: '10px',
       textTransform: 'capitalize',
@@ -23,11 +23,9 @@ export const BoxItems = {
       width: '95%',
       height: 330,
       fontFamily: 'IBM-Plex',
-      // margin: '30px 10px 0 10px',
-      border: '1px solid #EAECF0',
+      border: '1px solid var(--clr-line)',
       borderRadius: '8px',
       backgroundColor: 'transparent',
       margin: '24px auto 0 auto',
       display: 'block',
-      // borderRadius: '8px'
 }

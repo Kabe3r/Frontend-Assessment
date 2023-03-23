@@ -4,7 +4,7 @@ export const BoxBanner = {
       height: 330,
       fontFamily: 'IBM-Plex',
       margin: '30px 10px 0 10px',
-      border: '1px solid #EAECF0',
+      border: '1px solid var(--clr-line)',
       borderRadius: '8px',
       backgroundColor: 'transparent',
 }
@@ -22,7 +22,7 @@ export const TypoH4 = {
 
 export const TypoSpan = {
       marginLeft: '10px',
-      color: '#475467',
+      color: 'var(--clr-typo)',
       fontSize: '14px'
 }
 
@@ -34,23 +34,23 @@ export const ImgBanner = {
 
 export const BtnLive = {
       borderRadius: '10px',
-      backgroundColor: '#FFFAEB',
+      backgroundColor: 'var(--clr-white-yellow)',
       paddingInline: '8px',
-      color: '#B54708',
+      color: 'var(--clr-orange-red)',
       fontSize: '13px',
       fontFamily: 'IBM-Plex',
       textTransform: 'capitalize'
 }
 
 export const BtnFiber = {
-      color: '#F79009',
+      color: 'var(--clr-orange)',
       height: '14px',
       marginRight: '-10px'
 }
 
 export const BtnInvite = {
-      borderColor: '#D0D5DD',
-      color: '#344054',
+      borderColor: 'var(--clr-border)',
+      color: 'var(--clr-bid-card)',
       fontFamily: 'IBM-Plex',
       marginTop: '-32px',
       borderRadius: '10px',
