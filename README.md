@@ -2,9 +2,17 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## For Cloning the Project:
+
+### `git clone https://github.com/Kabe3r/Frontend-Assessment.git`
+
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `cd to project directory and run npm install: to install respective packages`
+
+## For Starting the project:
 
 ### `npm start`
 
